@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>유치찬란 구구단 게임!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 시작 화면 -->
+    <div id="start-screen" class="screen">
+        <h1 class="rainbow-text">★슈퍼파워★<br>구구단 게임</h1>
+        <button id="start-btn" class="bouncy-btn">게임 시작!</button>
+    </div>
+
+    <!-- 게임 화면 -->
+    <div id="game-screen" class="screen hidden">
+        <div class="header">
+            <div id="score-board" class="score-board">점수: <span id="score">0</span>점</div>
+        </div>
+        
+        <div class="question-container">
+            <h2 id="question">2 x 3 = ?</h2>
+            <div id="feedback" class="hidden">⭕</div>
+        </div>
+
+        <div class="options-grid">
+            <button class="option-btn" onclick="checkAnswer(0)">1</button>
+            <button class="option-btn" onclick="checkAnswer(1)">2</button>
+            <button class="option-btn" onclick="checkAnswer(2)">3</button>
+            <button class="option-btn" onclick="checkAnswer(3)">4</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
